@@ -11,50 +11,121 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="scripts/index.html">Nail Shop Center </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Nail Shop Center </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="userLogin.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="checkout.html">Cart</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="acrylic.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="acrylic.html">Acrylic Powder</a></li>
+                                <li><a class="dropdown-item" href="brushes.html">Brushes</a></li>
+                                <li><a class="dropdown-item" href="bling.html">Bling</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main class="container-fluid">
+
+
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="nailfront.jpeg" class="d-block w-100" alt="Nail Home image">
+                </div>
+                <div class="carousel-item">
+                    <img src="nailfront.jpeg" class="d-block w-100" alt="Second carousel image">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/nailfront.jpeg" class="d-block w-100" alt="Third carousel image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="userLogin.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="checkout.html">Cart</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="acrylic.html">Acrylic Powder</a></li>
-                            <li><a class="dropdown-item" href="brushes.html">Brushes</a></li>
-                            <li><a class="dropdown-item" href="bling.html">Bling</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <p>Featured products</p>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="sticky-bottom">
+                <div class="alert alert-danger" role="alert">
+                    SALE! <a href="acrylic.html" class="alert-link">BOGO acrylic powder</a> until 11/11.
+                </div>
             </div>
         </div>
-    </nav>
+    </main>
 
-    
+
+
+    <footer>
+        <div class="relative-bottom">
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <address>123 Nailway road Fake town, Fake State 01234</address>
+                <p>Email us:<a href="https://www.gmail.com/niyaw144/">Niyaw144@gmail.com</a></p>
+                <p>Leave Us a Message</p>
+                <input type="textbox">
+                <button class="messagebttn">Submit</button>
+
+            </ul>
+        </div>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-<main></main>
-
-
-
-
 
 
 
